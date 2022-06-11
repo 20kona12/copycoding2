@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*共通部分*/
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 0.9rem;
+}
+a {
+  text-decoration : none;
+  color: black;
+}
+
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+  list-style: none;
+  color: black;
+}
+
+.wrapper {
+  max-width: 960px;
+  padding: 0 4%;
+  text-align: center;
+  margin: 0 auto 100px auto;
+}
+
+.main {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  display: inline-block;
+  border-bottom: 1px solid black;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*HEADER*/
+
+.logo {
+ width: 120px ;
+
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  padding: 0 4%;
+  padding-top: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-nav {
+  display: flex;
+ margin: 10px 0;
+  
+  
+}
+
+.header-nav li {
+  margin-left: 30px;
+  font-size: 0.9rem;
+}
+/*mainvisual*/
+
+.mainvisual {
+  object-fit: cover;
+}
+
+.mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 600px;
+  object-fit: cover;
+  margin-bottom: 80px;
+}
+
+/*about*/
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+.profileimg {
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+.profiletxt h3 {
+  text-align: left;
+  margin:10px 0;
+  
+}
+.profiletxt p {
+  font-size: 0.9rem;
+}
+
+/*bicycle*/
+.bicycle-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bicycle-list h3 {
+  margin: 10px 0;
+}
+
+.bicycle-list li {
+  width : 32% ;
+}
+
+footer {
+  text-align: center;
+ font-size: 10px;
+ padding: 10px 0;
+}
+
+
+/*レスポンシブ*/
+
+@media (max-width: 600px) {
+
+  .mainvisual {
+    height: calc(100vh - 60px);
+  }
+
+.bicycle-list {
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+    flex-direction: column;
+    align-items: center;
+}
+
+.bicycle-list li {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+}
